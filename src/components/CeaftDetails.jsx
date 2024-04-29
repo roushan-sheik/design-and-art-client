@@ -25,6 +25,8 @@ const CeaftDetails = () => {
     description,
     customization,
   } = product;
+  console.log(username);
+  console.log(photo);
   if (loading) {
     return (
       <div className="h-[calc(100vh-80px)] flex justify-center items-center">
@@ -42,13 +44,16 @@ const CeaftDetails = () => {
     <div>
       {" "}
       <div className="flex justify-center">
-        <div className="flex flex-col max-w-6xl p-6 shadow-2xl space-y-6 overflow-hidden rounded-lg dark:bg-gray-50 dark:text-gray-800">
+        <div className="flex flex-col  w-[80%]  p-6 shadow-2xl space-y-6 overflow-hidden rounded-lg dark:bg-gray-50 dark:text-gray-800">
           <div className="flex space-x-4">
-            <img
-              alt=""
-              src={image}
-              className="object-cover w-12 h-12 rounded-full shadow dark:bg-gray-500"
-            />
+            <div>
+              <img
+                alt=""
+                src={image}
+                className="object-cover  h-12 rounded-full shadow dark:bg-gray-500"
+              />
+            </div>
+
             <div className="flex flex-col space-y-1">
               <a
                 rel="noopener noreferrer"

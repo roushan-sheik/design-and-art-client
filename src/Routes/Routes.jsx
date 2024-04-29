@@ -1,18 +1,18 @@
 import { createBrowserRouter } from "react-router-dom";
-import Root from "./Root";
-import Home from "../pages/Home";
+import CategoryCard from "../components/CategoryCard";
+import CategoryDetails from "../components/CategoryDetails";
+import CeaftDetails from "../components/CeaftDetails";
+import UpdateProduct from "../components/UpdateProduct";
+import VeiwDetails from "../components/VeiwDetails";
 import AddArtsCarfts from "../pages/AddArtsCarfts";
 import AllArtsCarts from "../pages/AllArtsCarts";
+import Home from "../pages/Home";
+import Login from "../pages/Login";
 import MyArtsCarfts from "../pages/MyArtsCarfts";
 import NotFoundPage from "../pages/NotFoundPage";
 import Register from "../pages/Register";
-import Login from "../pages/Login";
-import VeiwDetails from "../components/VeiwDetails";
 import Private from "../Private/Private";
-import UpdateProduct from "../components/UpdateProduct";
-import CeaftDetails from "../components/CeaftDetails";
-import CategoryCard from "../components/CategoryCard";
-import CategoryDetails from "../components/CategoryDetails";
+import Root from "./Root";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -68,7 +68,7 @@ const router = createBrowserRouter([
           </Private>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(`http://backend-orcin-ten-82.vercel.app/products/${params.id}`),
       },
       {
         path: "/craftdetails/:id",
@@ -78,7 +78,7 @@ const router = createBrowserRouter([
           </Private>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(`https://backend-orcin-ten-82.vercel.app/product/${params.id}`),
       },
       {
         path: "/categorys/:category",
@@ -88,7 +88,9 @@ const router = createBrowserRouter([
         path: "/categoryDetails/:id",
         element: <CategoryDetails></CategoryDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/categories/${params.id}`),
+          fetch(
+            `http://backend-orcin-ten-82.vercel.app/categories/${params.id}`
+          ),
       },
     ],
   },

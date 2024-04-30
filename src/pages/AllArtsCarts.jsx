@@ -7,7 +7,7 @@ const AllArtsCarts = () => {
   const { loading } = useContext(AuthContext);
   const [load, setLoad] = useState(true);
   useEffect(() => {
-    fetch("http://backend-orcin-ten-82.vercel.app/products")
+    fetch("https://backend-orcin-ten-82.vercel.app/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

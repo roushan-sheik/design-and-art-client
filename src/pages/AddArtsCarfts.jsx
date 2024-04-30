@@ -35,7 +35,7 @@ const AddArtsCarfts = () => {
       customization,
     };
     console.log(products);
-    fetch("http://localhost:5000/products", {
+    fetch("https://backend-orcin-ten-82.vercel.app/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

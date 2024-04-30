@@ -5,7 +5,7 @@ const Slider = ({ slider }) => {
     <div>
       <div className=" relative">
         <img
-          className=" h-[400px] md:h-[500px] lg:h-[750px] bg-cover opacity-60"
+          className=" h-[400px] md:h-[500px] lg:h-[750px] bg-cover w-full  "
           src={photo}
           alt=""
         />

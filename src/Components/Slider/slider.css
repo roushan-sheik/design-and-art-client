@@ -1,0 +1,36 @@
+
+.slide {
+    color: #fff;
+    /* height: 80vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.slide1 {
+    background-image: url('https://i.ibb.co/KwT8cKK/comic.jpg');
+}
+.slide2 {
+    background-image: url('https://i.ibb.co/gmT0SVM/pencil.jpg');
+}
+.slide3 {
+    background-image: url('https://i.ibb.co/7b937JX/oil.webp');
+}
+.slide4 {
+    background-image: url('https://i.ibb.co/HTzT86N/mountail.jpg');
+}
+
+.overlay-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency (alpha value) as needed */
+  }

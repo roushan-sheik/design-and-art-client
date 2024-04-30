@@ -14,7 +14,7 @@ Live Site URL: [DesignAnd Art](https://design-and-art-75931.web.app/)
 
  - React, MongoDB, ExpressJs, Node JS,
  - HTML, CSS, Tailwind CSS, JavaScript,
- - Deisy Ui, Firebase
+ - Deisy Ui component library, Firebase
 
 
 ## Key Features:
